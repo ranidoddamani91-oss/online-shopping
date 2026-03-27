@@ -92,6 +92,9 @@ class Calculator:
 
     def create_operator_buttons(self):
         i = 0
+        j=0
+        k=0
+        
         for operator, symbol in self.operations.items():
             button = tk.Button(self.buttons_frame, text=symbol, bg=OFF_WHITE, fg=LABEL_COLOR, font=DEFAULT_FONT_STYLE,
                                borderwidth=0, command=lambda x=operator: self.append_operator(x))
